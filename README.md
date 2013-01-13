@@ -15,14 +15,10 @@ And then execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install pg_foreign_keys
-
 ## Usage
 
     class Klass < ActiveRecord::Base
-      foreign_keys :students, :teachers
+      pg_foreign_keys :students, :teachers
     end
 
     class Student < ActiveRecord::Base
@@ -47,7 +43,7 @@ Or install it yourself as:
 the [will_paginate](https://github.com/mislav/will_paginate) gem and the [kaminari](https://github.com/amatsuda/kaminari) gem.
 
     class Klass < ActiveRecord::Base
-      foreign_keys :students, :teachers
+      pg_foreign_keys :students, :teachers
       scope :by_date, order("created_at DESC")
     end
 

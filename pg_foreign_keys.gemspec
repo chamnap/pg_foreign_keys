@@ -17,10 +17,12 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ['lib']
 
-  gem.add_development_dependency 'bundler', '>= 1.1.3'
+  gem.add_development_dependency 'bundler'
   gem.add_development_dependency 'rspec', '~> 2.12.0'
+  gem.add_development_dependency 'factory_girl', '~> 4.1.0'
   gem.add_development_dependency 'pg'
   gem.add_development_dependency 'postgres_ext'
+  gem.add_development_dependency 'pry'
   gem.add_dependency 'activerecord', '~> 3.2'
   gem.add_dependency 'pg'
 end
